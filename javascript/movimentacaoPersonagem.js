@@ -1,30 +1,21 @@
-window.onkeyup = function(pressed) {
-    var key = pressed.keyCode ? pressed.keyCode : pressed.which;
-    switch (key) {
-        case 37:
-            leftArrowPressed();
-            break;
-        case 39:
-            rightArrowPressed();
-            break;
-        case 38:
-            upArrowPressed();
-            break;
+var madoka = document.getElementById('madoka');
+var maxX = screen.width;
+//Tem que fazer o controle pra ela nao conseguir deslocar para fora da tela
+
+var posicaoX = 0;
+
+//document.onkeydown = movimentaX;
+document.onkeypress = movimentaX;
+
+function movimentaX(e) {
+    if(e.keyCode==39){
+        madoka.src="img/madokaDireita.gif";
+        posicaoX += 5
+        madoka.style.left = posicaoX + 'px';
     }
-}
-
-function leftArrowPressed() {
-    let element = document.getElementById("madokaAndando");
-    element.style.left = parseInt(element.style.left) - 10 + 'px';
-}
-
-function rightArrowPressed() {
-    let element = document.getElementById("madokaAndando");
-    let num = parseInt(element.style.left) + 10;
-    element.style.left = num + 'px';
-}
-
-function upArrowPressed() {
-    let element = document.getElementById("madokaAndando");
-    element.style.top = parseInt(element.style.top) - 10 + 'px';
+    if(e.keyCode==37){
+        madoka.src="img/madokaEsquerda.gif";
+        posicaoX -= 5
+        madoka.style.left = posicaoX + 'px';
+    }
 }

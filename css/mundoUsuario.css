@@ -11,23 +11,10 @@ body{
     z-index: -1;
 }
 
-#madokaParada{
+#madoka{
     height: 100px;
     width: auto;
     bottom: 35px;
     position: absolute;
-}
-
-#madokaEsquerda{
-    height: 100px;
-    width: auto;
-    bottom: 35px;
-    position: absolute;
-}
-
-#madokaDireita{
-    height: 100px;
-    width: auto;
-    bottom: 35px;
-    position: absolute;
+    display: block;
 }
