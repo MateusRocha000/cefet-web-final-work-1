@@ -12,14 +12,21 @@ body{
 }
 
 #madokaParada{
-    height: 200px;
+    height: 100px;
     width: auto;
     bottom: 35px;
     position: absolute;
 }
 
-#madokaAndando{
-    height: 200px;
+#madokaEsquerda{
+    height: 100px;
+    width: auto;
+    bottom: 35px;
+    position: absolute;
+}
+
+#madokaDireita{
+    height: 100px;
     width: auto;
     bottom: 35px;
     position: absolute;

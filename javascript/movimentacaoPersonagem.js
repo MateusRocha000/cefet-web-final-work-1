@@ -1,7 +1,6 @@
-window.addEventListener('keydown', moveSelection);
-
-function moveSelection(evt) {
-    switch (evt.keyCode) {
+window.onkeyup = function(pressed) {
+    var key = pressed.keyCode ? pressed.keyCode : pressed.which;
+    switch (key) {
         case 37:
             leftArrowPressed();
             break;
@@ -21,15 +20,11 @@ function leftArrowPressed() {
 
 function rightArrowPressed() {
     let element = document.getElementById("madokaAndando");
-    element.style.left = parseInt(element.style.left) + 10 + 'px';
-
+    let num = parseInt(element.style.left) + 10;
+    element.style.left = num + 'px';
 }
 
 function upArrowPressed() {
     let element = document.getElementById("madokaAndando");
     element.style.top = parseInt(element.style.top) - 10 + 'px';
 }
-
-
-
-
