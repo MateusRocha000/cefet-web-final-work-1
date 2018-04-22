@@ -1,0 +1,26 @@
+html, body{
+    margin: 0px;
+}
+
+body{
+    background-image: url("../img/FundoMundoUsuario.jpeg");
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-color: #2586DB;
+    z-index: -1;
+}
+
+#madokaParada{
+    height: 200px;
+    width: auto;
+    bottom: 35px;
+    position: absolute;
+}
+
+#madokaAndando{
+    height: 200px;
+    width: auto;
+    bottom: 35px;
+    position: absolute;
+}
