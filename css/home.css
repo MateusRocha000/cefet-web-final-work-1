@@ -36,81 +36,77 @@ button{
 	padding: 0 5px 0 5px;
 }
 
-.titles
-{
-	position: relative;
-}
 
 .placa1, .placa2, .placa3, .placa4{
-	width: 90px;
+	width: 7%;
 	height: auto;
 }
 
 .placa1{
 	position: absolute;
-	left: 478px;
-	top: 105px;
+	left: 27.8%;
+	top: 35%;
 	z-index: 2;
 }
 
 .p1{
 	transform: rotate(-30deg);
 	font-family: 'Risque';
-	font-size: 20px;
+	font-size: 1.5vw;
 	position: absolute;
-	left: 495px;
-	top: 128px;
+	left: 29%;
+	top: 38.5%;
 	z-index: 3;
 }
 
 .placa2{
 	position: absolute;
-	left: 478px;
-	top: 300px;
+	left: 27.8%;
+	top: 65%;
 	z-index: 2;
 }
 
 .p2{
 	transform: rotate(-30deg);
 	font-family: 'Risque';
-	font-size: 20px;
+	font-size: 1.5vw;
 	position: absolute;
-	left: 495px;
-	top: 323px;
+	left: 29%;
+	top: 68.5%;
 	z-index: 3;
 }
 
 .placa3{
 	position: absolute;
-	left: 795px;
-	top: 105px;
+	right: 28.2%;
+	top: 35%;
 	z-index: 2;
 }
 
 .p3{
 	transform: rotate(-30deg);
 	font-family: 'Risque';
-	font-size: 20px;
+	font-size: 1.5vw;
 	position: absolute;
-	left: 800px;
-	top: 128px;
+	right: 28.8%;
+	top: 38.5%;
 	z-index: 3;
 }
 
 .placa4{
 	position: absolute;
-	left: 795px;
-	top: 300px;
+	right: 28.2%;
+	top: 65%;
 	z-index: 2;
 }
 
 .p4{
 	transform: rotate(-30deg);
 	font-family: 'Risque';
-	font-size: 20px;
+	font-size: 1.5vw;
 	position: absolute;
-	left: 805px;
-	top: 323px;
+	right: 29.3%;
+	top: 68.5%;
 	z-index: 3;
 }
 
@@ -124,55 +120,55 @@ button{
 }
 
 .stair{
-	width: 250px;
-	height: 500px;
+	width: 50%;
+	height: 75%;
 	position: absolute;
-	left: 558px;
-	bottom: 5px;
+	left: 25%;
+	bottom: 1%;
 }
 
 .cano1{
 	transform: rotate(90deg);
-	width: 100px;
+	width: 7.5%;
 	height: auto;
 	position: absolute;
-	left: 525px;
-	bottom: 300px;
+	left: 35%;
+	bottom: 46%;
 }
 
 .cano2{
 	transform: rotate(90deg);
-	width: 100px;
+	width: 7.5%;
 	height: auto;
 	position: absolute;
-	left: 525px;
-	bottom: 100px;
+	left: 35%;
+	bottom: 16%;
 }
 
 .cano3{
 	transform: rotate(-90deg);
-	width: 100px;
+	width: 7.5%;
 	height: auto;
 	position: absolute;
-	right: 525px;
-	bottom: 300px;
+	right: 35%;
+	bottom: 46%;
 }
 
 .cano4{
 	transform: rotate(-90deg);
-	width: 100px;
+	width: 7.5%;
 	height: auto;
 	position: absolute;
-	right: 525px;
-	bottom: 100px;
+	right: 35%;
+	bottom: 16%;
 }
 
 .wall1{
 	transform: rotate(90deg);
 	position: absolute;
-	left: 300px;
-	bottom: 160px;
-	width: 450px;
+	left: 14%;
+	bottom: 25.7%;
+	width: 35%;
 	height: auto;
 	z-index: 1;
 }
@@ -180,9 +176,9 @@ button{
 .wall2{
 	transform: rotate(90deg);
 	position: absolute;
-	right: 300px;
-	bottom: 160px;
-	width: 450px;
+	right: 14%;
+	bottom: 25.7%;
+	width: 35%;
 	height: auto;
 	z-index: 1;
 }
