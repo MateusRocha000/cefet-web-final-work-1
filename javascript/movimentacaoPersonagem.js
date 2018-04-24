@@ -11,7 +11,7 @@ function movimentandoX(e) {
             madoka.src = "img/madokaDireita.gif";
             imagemEscolhida = 1;
         }
-        let tamanhoTela = window.innerWidth;
+        let tamanhoTela = window.innerWidth - window.innerWidth*0.09;
         if (!(posicaoX + 5 > tamanhoTela))
             posicaoX += 5;
         madoka.style.left = posicaoX + 'px';
