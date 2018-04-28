@@ -6,7 +6,6 @@ body{
 	background-repeat: 	repeat-x, 
 						no-repeat,
 						repeat-x;
-  	background-position: bottom;
   	background-size: 	500px auto, 
   						300px auto,
   						28px auto,
@@ -31,11 +30,13 @@ h2{
 	margin: 0;
 }
 
-button{
-	border-radius: 12px;
-	padding: 0 5px 0 5px;
+#mob{
+    height: 100px;
+    width: auto;
+    bottom: 45px;
+    position: absolute;
+    display: block;
 }
-
 
 .placa1, .placa2, .placa3, .placa4{
 	width: 7%;
@@ -119,12 +120,28 @@ button{
 	margin-right: 50px;
 }
 
-.stair{
+.stair-left{
+	width: 20%;
+	height: 90%;
+	position: absolute;
+	left: 16%;
+	bottom: 0;
+}
+
+.stair-middle{
 	width: 50%;
 	height: 75%;
 	position: absolute;
 	left: 25%;
 	bottom: 1%;
+}
+
+.stair-right{
+	width: 20%;
+	height: 90%;
+	position: absolute;
+	right: 16%;
+	bottom: 0;
 }
 
 .cano1{
@@ -181,4 +198,94 @@ button{
 	width: 35%;
 	height: auto;
 	z-index: 1;
+}
+
+.visit{
+	float: left;
+}
+
+.modal{
+	display: table;
+	display: none;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(71,78,93,0.8);
+	padding-top: 50px;
+	z-index: 4;
+}
+
+.modal-content{
+	padding: 2%;
+	background-color: #fefefe;
+	margin: 2% auto 15% auto;
+	border: 1px solid #888;
+	width: 25%;
+}
+
+.modal-content label{
+	display: table-row;
+}
+
+#sub{
+	position: absolute;
+	font-family: 'Risque';
+	font-size: 1.5vw;
+	border-radius: 12px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 8%;
+	opacity: 0.9;
+	top: 65%;
+	right: 28%; 
+	z-index: 3;
+}
+
+#lib{
+	position: absolute;
+	font-family: 'Risque';
+	font-size: 1.5vw;
+	border-radius: 12px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 8%;
+	opacity: 0.9;
+	top: 65%;
+	left: 28%;
+	z-index: 3;
+}
+
+input[type=text],input[type=password], input[type=email]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.signup, .cancelbtn, .loginbtn{
+	font-family: 'Risque';
+	font-size: 1.5vw;
+	border-radius: 12px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+	opacity: 0.9;
 }
