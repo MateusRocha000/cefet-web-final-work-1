@@ -10,9 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Risque' rel='stylesheet'>
+
 </head>
 <body>
-    
+    <div class="visit">
+        <h2>Visitas:</h2>
+        <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=file:///home/mateus/cefet-web-final-work/home.html&digit=style/plain/6/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://   www.reliablecounter.com/blog/the-best-faucet-water-filters-2018/" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
+    </div>
     <div class="content">
         <div class="mdl-grid cover">
         <div class="mdl-cell mdl-cell--3-col-desktop col">
@@ -54,7 +58,11 @@
             </footer>
         </div>
 
-        <img src="./img/stair.png" class="stair">
+        <img src="./img/stair.png" class="stair-left">
+
+        <img src="./img/stair.png" class="stair-middle">
+
+        <img src="./img/stair.png" class="stair-right">
 
         <img src="./img/cano.png" class="cano1">
 
@@ -70,6 +78,78 @@
         <img src="./img/parede.png" class="wall2">
 
     </div>
+
+    <button id="lib" onclick="document.getElementById('lif').style.display='block'">
+        Log In
+    </button>
+
+    <div id="lif" class="modal">
+        <span onclick="document.getElementById('lif').style.display='none'" class="close" title="Close Modal"></span>
+
+        <form id="lif" class="modal-content" action="mundoUsuario.html" method="POST">
+            <label>
+                User Name: <input type="text" name="username" placeholder="Enter User Name" required></input>
+            </label>
+
+            <label>
+                Password: <input type="text" name="password" placeholder="Enter Password" required></input>
+            </label>
+
+            <label>
+                Repeat Password: <input type="password" name="repeat-psw" placeholder="Repeat Password" required></input>
+            </label>
+
+            <div class="buttons">
+                <input class="loginbtn" type="submit" value="Log In" />
+
+                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('lif').style.display='none'" />
+            </div>
+        </form>
+    </div>
+
+    <button id="sub" onclick="document.getElementById('suf').style.display='block'">
+        Sign Up
+    </button>
+
+    <div id="suf" class="modal">
+        <span onclick="document.getElementById('suf').style.display='none'" class="close" title="Close Modal"></span>
+
+        <form id="suf" class="modal-content" action="mundoUsuario.html" method="POST">
+            <label>
+                Name: <input type="text" name="mainname" placeholder="Enter Name" required></input>
+            </label>
+
+            <label>
+                Last Name: <input type="text" name="lastname" placeholder="Enter Last Name" required></input>
+            </label>
+
+            <label>
+                User Name: <input type="text" name="username" placeholder="Enter User Name" required></input>
+            </label>
+
+            <label>
+                Email: <input type="email" name="email" placeholder="Enter Email" required></input>
+            </label>
+
+            <label>
+                Password: <input type="password" name="psw" placeholder="Enter Password" required></input>
+            </label>
+
+            <label>
+                Repeat Password: <input type="password" name="repeat-psw" placeholder="Repeat Password" required></input>
+            </label>
+
+            <div class="buttons">
+                <input class="signup" type="submit" value="Sign Up" />
+
+                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('suf').style.display='none'" />
+            </div>
+        </form>
+    </div>
+
+    <img src="img/madokaParada.gif" id="mob">
+    <script type="text/javascript" src="./javascript/code.js"></script>
+
     <script src="materialDesignLite/material.min.js"></script>
     <script src="../javascript/code.js"></script>
 </body>
