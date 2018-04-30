@@ -5,8 +5,29 @@
     <title>Mundo</title>
     <link rel="stylesheet" href="css/mundoUsuario.css">
 </head>
-<body>
+<body id="bodyMundo">
+	<button id="widget-chao-botao" onclick="document.getElementById('widget-chao').style.display='block'">
+        Widget - Chão
+    </button>
+	<div id="widget-chao" class="modal">
+        <span onclick="document.getElementById('widget-chao').style.display='none'" class="close" title="Close Modal"></span>
+
+        <form id="widget-chao" class="modal-content" action="mundoUsuario.html" method="POST">
+            Opções de Chão:
+
+            <div>
+            	<img src="img/chao01.jpeg" alt="Tipo de chão 1" onclick="alteraChao(this)">
+            	<img src="img/chao02.jpeg" alt="Tipo de chão 2" onclick="alteraChao(this)">
+            	<img src="img/chao03.jpeg" alt="Tipo de chão 3" onclick="alteraChao(this)">
+            </div>
+ 
+            <div class="buttons">
+                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('widget-chao').style.display='none'" />
+            </div>
+        </form>
+    </div>
     <img id="madoka" src="img/madokaParadaDireita.gif">
     <script type="text/javascript" src="javascript/movimentacaoPersonagem.js"></script>
+    <script type="text/javascript" src="javascript/widgetChao.js"></script>
 </body>
 </html>
