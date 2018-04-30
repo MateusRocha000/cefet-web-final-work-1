@@ -30,7 +30,7 @@ function movimentandoX(e) {
 function paradaX() {
 	if (imagemEscolhida === 2)
     	madoka.src = "img/madokaParadaEsquerda.gif";
-	else
+	else if (imagemEscolhida === 1)
     	madoka.src = "img/madokaParadaDireita.gif";
     imagemEscolhida = 0;
 }
