@@ -1,3 +1,8 @@
+if(localStorage.bg !== "")
+    document.body.style.backgroundImage = localStorage.bg;
+if(localStorage.cor_ceu !== "")
+    document.body.style.backgroundColor = localStorage.cor_ceu;
+
 function alteraCeu(e) {
 	let caminho = e.src.split('ceu');
     if(document.body.style.backgroundImage === '')
@@ -12,5 +17,7 @@ function alteraCeu(e) {
     	document.body.style.backgroundColor = '#2C3635';
     else if(e.src.includes("ceu03"))
     	document.body.style.backgroundColor = '#000000';
+    localStorage.bg = document.body.style.backgroundImage;
+    localStorage.cor_ceu = document.body.style.backgroundColor;
     document.getElementById('widget-ceu').style.display='none';
 }

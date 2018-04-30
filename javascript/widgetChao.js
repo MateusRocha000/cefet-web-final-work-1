@@ -1,3 +1,6 @@
+if(localStorage.bg !== "")
+    document.body.style.backgroundImage = localStorage.bg;
+
 function alteraChao(e) {
     let caminho = e.src.split('chao');
     if(document.body.style.backgroundImage === '')
@@ -6,5 +9,6 @@ function alteraChao(e) {
         let aux = document.body.style.backgroundImage.split(',');
         document.body.style.backgroundImage = 'url('+e.src+'), ' + aux[1];
     }
+    localStorage.bg = document.body.style.backgroundImage;
     document.getElementById('widget-chao').style.display='none';
 }
