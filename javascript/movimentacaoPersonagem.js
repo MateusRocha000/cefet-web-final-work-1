@@ -28,6 +28,9 @@ function movimentandoX(e) {
 }
 
 function paradaX() {
-    madoka.src = "img/madokaParada.gif";
+	if (imagemEscolhida === 2)
+    	madoka.src = "img/madokaParadaEsquerda.gif";
+	else
+    	madoka.src = "img/madokaParadaDireita.gif";
     imagemEscolhida = 0;
 }
