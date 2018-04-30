@@ -26,8 +26,31 @@
             </div>
         </form>
     </div>
+
+    <button id="widget-ceu-botao" onclick="document.getElementById('widget-ceu').style.display='block'">
+        Widget - Céu
+    </button>
+	<div id="widget-ceu" class="modal">
+        <span onclick="document.getElementById('widget-ceu').style.display='none'" class="close" title="Close Modal"></span>
+
+        <form id="widget-ceu" class="modal-content" action="mundoUsuario.html" method="POST">
+            Opções de Céu:
+
+            <div>
+            	<img src="img/ceu01.jpeg" alt="Tipo de Céu 1" height="100" width="100" onclick="alteraCeu(this)">
+            	<img src="img/ceu02.jpeg" alt="Tipo de Céu 2" height="100" width="100" onclick="alteraCeu(this)">
+            	<img src="img/ceu03.jpeg" alt="Tipo de Céu 3" height="100" width="100" onclick="alteraCeu(this)">
+            </div>
+ 
+            <div class="buttons">
+                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('widget-ceu').style.display='none'" />
+            </div>
+        </form>
+    </div>
+
     <img id="madoka" src="img/madokaParadaDireita.gif">
     <script type="text/javascript" src="javascript/movimentacaoPersonagem.js"></script>
     <script type="text/javascript" src="javascript/widgetChao.js"></script>
+    <script type="text/javascript" src="javascript/widgetCeu.js"></script>
 </body>
 </html>
