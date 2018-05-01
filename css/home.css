@@ -1,18 +1,15 @@
 body{
 	background-image: 	url("../img/mato.png"), 
-						url("../img/footer.png"),
-						url("../img/chao01.jpeg"), 
+						url("../img/chao02.jpeg"), 
 						linear-gradient(#00bfff 75%, #fff);
 	background-repeat: 	repeat-x, 
-						no-repeat,
 						repeat-x;
   	background-size: 	500px auto, 
-  						300px auto,
-  						40px auto,
+  						28px auto,
   						auto auto;
   	background-position:right 0 bottom 10px,
-  						right 0 bottom 28px,
   						right 0 bottom 0;
+  	background-attachment: fixed;
   	position: relative;
 }
 
@@ -30,13 +27,6 @@ h2{
 	margin: 0;
 }
 
-#mob{
-    height: 100px;
-    width: auto;
-    bottom: 45px;
-    position: absolute;
-    display: block;
-}
 
 .placa1, .placa2, .placa3, .placa4{
 	width: 7%;
@@ -113,11 +103,6 @@ h2{
 
 .content{
 	text-align: center;
-}
-
-.fundo{
-	text-align: right;
-	margin-right: 50px;
 }
 
 .stair-left{
@@ -267,6 +252,50 @@ h2{
 	z-index: 3;
 }
 
+#about{
+	position: absolute;
+	font-family: 'Risque';
+	font-size: 1.5vw;
+	border-radius: 12px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 8%;
+	opacity: 0.9;
+	top: 35%;
+	left: 28%; 
+	z-index: 3;
+}
+
+#creators{
+	position: absolute;
+	font-family: 'Risque';
+	font-size: 1.5vw;
+	border-radius: 12px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 8%;
+	opacity: 0.9;
+	top: 35%;
+	right: 28%; 
+	z-index: 3;
+}
+
+#sub:hover{
+	opacity: 0.7;
+}
+
+#lib:hover{
+	opacity: 0.7;
+}
+
 input[type=text],input[type=password], input[type=email]{
 	width: 100%;
 	padding: 15px;
@@ -276,7 +305,7 @@ input[type=text],input[type=password], input[type=email]{
 	background: #f1f1f1;
 }
 
-.signup, .cancelbtn, .loginbtn{
+.signup, .cancelbtn,.loginbtn{
 	font-family: 'Risque';
 	font-size: 1.5vw;
 	border-radius: 12px;
@@ -287,5 +316,16 @@ input[type=text],input[type=password], input[type=email]{
 	border: none;
 	cursor: pointer;
 	width: 30%;
-	opacity: 0.9;
+}
+
+.signup:hover{
+	opacity: 0.7;
+}
+
+.cancelbtn:hover{
+	opacity: 0.7;
+}
+
+.loginbtn:hover{
+	opacity: 0.7;
 }
