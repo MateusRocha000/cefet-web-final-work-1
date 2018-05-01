@@ -11,7 +11,7 @@ function movimentandoX(e) {
             madoka.src = "img/madokaDireita.gif";
             imagemEscolhida = 1;
         }
-        let tamanhoTela = window.innerWidth;
+        let tamanhoTela = window.innerWidth - window.innerWidth*0.09;
         if (!(posicaoX + 5 > tamanhoTela))
             posicaoX += 5;
         madoka.style.left = posicaoX + 'px';
@@ -28,6 +28,9 @@ function movimentandoX(e) {
 }
 
 function paradaX() {
-    madoka.src = "img/madokaParada.gif";
+	if (imagemEscolhida === 2)
+    	madoka.src = "img/madokaParadaEsquerda.gif";
+	else if (imagemEscolhida === 1)
+    	madoka.src = "img/madokaParadaDireita.gif";
     imagemEscolhida = 0;
 }
