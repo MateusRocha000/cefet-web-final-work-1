@@ -1,21 +1,11 @@
 body{
 	background-image: 	url("../img/mato.png"), 
-<<<<<<< HEAD
-						url("../img/floor.png"), 
-=======
-						url("../img/footer.png"),
-						url("../img/chao01.jpeg"), 
->>>>>>> 9a45eaa208307fe1a9bbd97fb68fc2f8136e871b
+						url("../img/chao02.jpeg"), 
 						linear-gradient(#00bfff 75%, #fff);
 	background-repeat: 	repeat-x, 
 						repeat-x;
   	background-size: 	500px auto, 
-<<<<<<< HEAD
   						28px auto,
-=======
-  						300px auto,
-  						40px auto,
->>>>>>> 9a45eaa208307fe1a9bbd97fb68fc2f8136e871b
   						auto auto;
   	background-position:right 0 bottom 10px,
   						right 0 bottom 0;
