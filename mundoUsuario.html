@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Mundo</title>
+    <link rel="shortcut icon" href="img/konata.ico" />
     <link rel="stylesheet" href="css/mundoUsuario.css">
 </head>
 <body id="bodyMundo">
+    <button id="mudarVisualizacao-botao" onclick=modosVisualizacao()>
+        Mudar para modo de edição
+    </button>
+
 	<button id="widget-chao-botao" onclick="document.getElementById('widget-chao').style.display='block'">
         Widget - Chão
     </button>
@@ -48,9 +53,29 @@
         </form>
     </div>
 
+    <button id="widget-texto-botao" onclick="document.getElementById('widget-texto').style.display='block'">
+        Widget - Caixa de Texto
+    </button>
+    <div id="widget-texto" class="modal">
+        <span onclick="document.getElementById('widget-texto').style.display='none'" class="close" title="Close Modal"></span>
+
+        <form id="widget-texto" class="modal-content" action="mundoUsuario.html" method="POST">
+            Adicone o seu texto personalizado:
+
+            <div>
+                Caixa de texto, que é um espacinho onde o usuário pode escrever alguma coisa e configurar a aparência: tamanho, posição, bordas, fonte e cor.
+            </div>
+
+            <div class="buttons">
+                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('widget-texto').style.display='none'" />
+            </div>
+        </form>
+    </div>
+
     <img id="madoka" src="img/madokaParadaDireita.gif">
     <script type="text/javascript" src="javascript/movimentacaoPersonagem.js"></script>
     <script type="text/javascript" src="javascript/widgetChao.js"></script>
     <script type="text/javascript" src="javascript/widgetCeu.js"></script>
+    <script type="text/javascript" src="javascript/modosVisualizacao.js"></script>
 </body>
 </html>

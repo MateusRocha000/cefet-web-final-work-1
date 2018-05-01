@@ -45,3 +45,7 @@ body{
 .modal-content label{
     display: table-row;
 }
+
+#widget-ceu-botao, #widget-chao-botao, #widget-texto-botao{
+    display: none;
+}
