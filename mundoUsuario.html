@@ -53,6 +53,29 @@
         </form>
     </div>
 
+    <button id="widget-galeria-botao" onclick="carregaGaleria()">
+        Widget - Galeria
+    </button>
+	<div id="widget-galeria" class="modal">
+        <span onclick="document.getElementById('widget-galeria').style.display='none'" class="close" title="Close Modal"></span>
+
+        <form id="widget-galeria" class="modal-content" action="mundoUsuario.html" method="POST">
+ 			<label>
+                Imagens: <textarea id="img-galeria" name="imagens" cols="40" rows="5" placeholder="Formato: link1.png; link2.jpg; link3.jpeg; ..."></textarea>
+            </label>
+
+            <label>
+                Comentários: <textarea id="cmt-galeria" name="comentarios" cols="40" rows="5" placeholder="Formato: comentário do link1; comentário do link2; comentário do link3; ..."></textarea>
+            </label>
+
+
+            <div class="buttons">
+            	<input class="savebtn" type="submit" value="Save" onclick="salvaGaleria()" />
+                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('widget-galeria').style.display='none'" />
+            </div>
+        </form>
+    </div>
+
     <button id="widget-texto-botao" onclick="document.getElementById('widget-texto').style.display='block'">
         Widget - Caixa de Texto
     </button>
@@ -72,10 +95,19 @@
         </form>
     </div>
 
+    <div id="galeria">
+          <img src="http://fegemo.github.io/cefet-web/images/philae-parts.jpg" id="slide">
+          <div id="div_cmt_galeria"><label id="cmt_galeria">COMENTÁRIO1</label></div>
+          <button id="anterior" class="controle">Anterior</button>
+          <button id="proximo" class="controle">Próximo</button>
+	</div>
+
     <img id="madoka" src="img/madokaParadaDireita.gif">
     <script type="text/javascript" src="javascript/movimentacaoPersonagem.js"></script>
     <script type="text/javascript" src="javascript/widgetChao.js"></script>
     <script type="text/javascript" src="javascript/widgetCeu.js"></script>
+    <script type="text/javascript" src="javascript/widgetGaleria.js"></script>
+    <script type="text/javascript" src="javascript/widgetTexto.js"></script>
     <script type="text/javascript" src="javascript/modosVisualizacao.js"></script>
 </body>
 </html>
