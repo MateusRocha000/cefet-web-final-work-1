@@ -8,13 +8,13 @@ document.onkeyup = paradaX;
 
 //localStorage.posicaoX = 0;
 
-if(localStorage.posicaoX !== "")
+if(localStorage.posicaoX !== "" && localStorage.posicaoX !== undefined  && !isNaN(localStorage.posicaoX))
 {
 	posicaoX = parseInt(localStorage.posicaoX);
 	madoka.style.left = posicaoX + 'px';
 }
 
-if(localStorage.imagemEscolhida !== "")
+if(localStorage.imagemEscolhida !== ""  && localStorage.imagemEscolhida !== undefined  && !isNaN(localStorage.imagemEscolhida))
 {
 	imagemEscolhida = parseInt(localStorage.imagemEscolhida);
 	if (imagemEscolhida === 2)

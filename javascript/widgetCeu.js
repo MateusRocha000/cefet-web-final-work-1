@@ -1,6 +1,6 @@
-if(localStorage.bg !== "")
+if(localStorage.bg !== ""  && localStorage.bg !== undefined)
     document.body.style.backgroundImage = localStorage.bg;
-if(localStorage.cor_ceu !== "")
+if(localStorage.cor_ceu !== "" && localStorage.cor_ceu !== undefined)
     document.body.style.backgroundColor = localStorage.cor_ceu;
 
 function alteraCeu(e) {

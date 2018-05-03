@@ -1,4 +1,4 @@
-if(localStorage.bg !== "")
+if(localStorage.bg !== "" && localStorage.bg !== undefined)
     document.body.style.backgroundImage = localStorage.bg;
 
 function alteraChao(e) {

@@ -98,3 +98,27 @@ body{
 #div_cmt_galeria{
     text-align: center;
 }
+
+.draggable {
+  position: absolute;
+  left: 20;
+  top: 20;
+}
+
+.active-drag {
+  opacity: 0.7;
+}
+
+#div_widget_texto {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  word-wrap: break-word;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 12px;
+  display: block;
+}
