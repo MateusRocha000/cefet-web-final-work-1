@@ -165,7 +165,7 @@ h2{
 	bottom: 16%;
 }
 
-.wall1{
+#wall1{
 	transform: rotate(90deg);
 	position: absolute;
 	left: 14%;
@@ -216,6 +216,15 @@ h2{
 	display: table-row;
 }
 
+
+#madoka{
+    height: 100px;
+    width: auto;
+    bottom: 45px;
+    position: absolute;
+    display: block;
+}
+
 #sub{
 	position: absolute;
 	font-family: 'Risque';
@@ -223,7 +232,7 @@ h2{
 	border-radius: 12px;
 	background-color: #4CAF50;
 	color: white;
-	padding: 14px 20px;
+	padding: 14px 14px 14px 14px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
@@ -241,7 +250,7 @@ h2{
 	border-radius: 12px;
 	background-color: #4CAF50;
 	color: white;
-	padding: 14px 20px;
+	padding: 14px 14px 14px 14px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
@@ -259,7 +268,7 @@ h2{
 	border-radius: 12px;
 	background-color: #4CAF50;
 	color: white;
-	padding: 14px 20px;
+	padding: 14px 14px 14px 14px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
@@ -277,7 +286,7 @@ h2{
 	border-radius: 12px;
 	background-color: #4CAF50;
 	color: white;
-	padding: 14px 20px;
+	padding: 14px 14px 14px 14px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
@@ -311,7 +320,7 @@ input[type=text],input[type=password], input[type=email]{
 	border-radius: 12px;
 	background-color: #4CAF50;
 	color: white;
-	padding: 14px 20px;
+	padding: 14px 14px 14px 14px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;

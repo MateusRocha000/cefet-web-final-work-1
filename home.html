@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CraftFolioGotchi</title>
+    <title>Waifu's Engineering Bros</title>
 
     <link rel="shortcut icon" href="img/konata.ico" />
 
@@ -30,7 +30,7 @@
         <div class="title">
             <header class="marcante">
                 <h1>
-                    W.E.B - Waifu Engineering Best
+                    W.E.B - Waifu's Engineering Bros
                 </h1>
             </header>
         </div>
@@ -39,20 +39,20 @@
         </div>
 
         <h2>Aprecie com moderação</h2>
-            
+        <!--   
         <div class="titles">
 
                 <img src="./img/placa.png" class="placa1">
-                <div class="p1">About</div>
+                <div class="p1">Sobre</div>
                 <img src="./img/placa.png" class="placa2">
-                <div class="p2">Log In</div>
+                <div class="p2">Logar</div>
                 <img src="./img/placa.png" class="placa3">
-                <div class="p3">Creators</div>
+                <div class="p3">Criadores</div>
                 <img src="./img/placa.png" class="placa4">
-                <div class="p4">Sign Up</div>
+                <div class="p4">Cadastrar</div>
 
         </div>
-
+        -->
         <img src="./img/stair.png" class="stair-left">
 
         <img src="./img/stair.png" class="stair-middle">
@@ -68,22 +68,22 @@
         <img src="./img/cano.png" class="cano4">
 
 
-        <img src="./img/parede.png" class="wall1">
+        <img src="./img/parede.png" id="wall1">
 
         <img src="./img/parede.png" class="wall2">
 
     </div>
 
     <form>
-        <input id="about" type="button" value="About" onclick="window.location.href='about.html'"></input>
+        <input id="about" type="button" value="Sobre" onclick="window.location.href='about.html'"></input>
     </form>
 
     <form>
-        <input id="creators" type="button" value="Creators" onclick="window.location.href='creators.html'"></input>
+        <input id="creators" type="button" value="Criadores" onclick="window.location.href='creators.html'"></input>
     </form>
 
     <button id="lib" onclick="document.getElementById('lif').style.display='block'">
-        Log In
+        Logar
     </button>
 
     <div id="lif" class="modal">
@@ -91,27 +91,27 @@
 
         <form id="lif" class="modal-content" action="mundoUsuario.html" method="POST">
             <label>
-                Username: <input type="text" name="username" placeholder="Enter Username" required></input>
+                Usuário: <input type="text" name="username" placeholder="Insira usuário" required></input>
             </label>
 
             <label>
-                Password: <input type="text" name="password" placeholder="Enter Password" required></input>
+                Senha: <input type="text" name="password" placeholder="Insira senha" required></input>
             </label>
 
             <label>
-                Repeat Password: <input type="password" name="repeat-psw" placeholder="Repeat Password" required></input>
+                Repetir senha: <input type="password" name="repeat-psw" placeholder="Repita a senha" required></input>
             </label>
 
             <div class="buttons">
-                <input class="loginbtn" type="submit" value="Log In" />
+                <input class="loginbtn" type="submit" value="Ok" />
 
-                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('lif').style.display='none'" />
+                <input class="cancelbtn" type="button" value="Cancelar" onclick="document.getElementById('lif').style.display='none'" />
             </div>
         </form>
     </div>
 
     <button id="sub" onclick="document.getElementById('suf').style.display='block'">
-        Sign Up
+        Cadastrar
     </button>
 
     <div id="suf" class="modal">
@@ -119,33 +119,33 @@
 
         <form id="suf" class="modal-content" action="mundoUsuario.html" method="POST">
             <label>
-                Username: <input type="text" name="username" placeholder="Enter Username" required></input>
+                Usuário: <input type="text" name="username" placeholder="Insira usuário" required></input>
             </label>
 
             <label>
-                E-mail: <input type="email" name="email" placeholder="Enter E-mail" required></input>
+                E-mail: <input type="email" name="email" placeholder="Insira e-mail" required></input>
             </label>
 
             <label>
-                Password: <input type="password" name="psw" placeholder="Enter Password" required></input>
+                Senha: <input type="password" name="psw" placeholder="Insira senha" required></input>
             </label>
 
             <label>
-                Repeat Password: <input type="password" name="repeat-psw" placeholder="Repeat Password" required></input>
+                Repetir senha: <input type="password" name="repeat-psw" placeholder="Repita a senha" required></input>
             </label>
 
             <div class="buttons">
 
-                <input class="signup" type="submit" value="Sign Up" />
+                <input class="signup" type="submit" value="Ok" />
 
-                <input class="cancelbtn" type="button" value="Cancel" onclick="document.getElementById('suf').style.display='none'" />
+                <input class="cancelbtn" type="button" value="Cancelar" onclick="document.getElementById('suf').style.display='none'" />
             </div>
         </form>
     </div>
 
-    <!--<img src="img/madokaParada.gif" id="mob">-->
+    <!--<img id="madoka" src="img/madokaParadaDireita.gif">-->
 
     <script src="materialDesignLite/material.min.js"></script>
-    <script src="../javascript/code.js"></script>
+    <script src="javascript/code.js"></script>
 </body>
 </html>
