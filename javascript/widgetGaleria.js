@@ -74,6 +74,7 @@ function salvaGaleria(e)
 
   document.getElementById('slide').src = links[0];
   document.getElementById('cmt_galeria').innerHTML = comentarios[0];
+  document.getElementById('widget-galeria').style.display='none'
 }
 
 function carregaGaleria(e)
