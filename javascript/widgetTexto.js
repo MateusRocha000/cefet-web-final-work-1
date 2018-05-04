@@ -99,7 +99,7 @@ function carregaTexto()
 	localStorage.cor_borda_caixa_texto = obj.style.borderColor;
 	localStorage.borda_tipo_caixa_texto = obj.style.borderStyle;
 	localStorage.ativo_caixa_texto = document.getElementById('ativo_caixa_texto').checked;
-	
+	document.getElementById('widget-texto').style.display='none'
 }
 		
 viiny.dragger(obj, {
