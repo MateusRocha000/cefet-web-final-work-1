@@ -25,7 +25,7 @@ else
 
 if(localStorage.comentarios === ""  || localStorage.comentarios === undefined)
 {
-  localStorage.comentarios = 'comentario da foto 1;';
+  localStorage.comentarios = ';';
 }
 else
 {

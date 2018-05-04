@@ -1,4 +1,4 @@
-if(localStorage.visualizacao !== ""){
+if(localStorage.visualizacao !== "" && localStorage.visualizacao !== undefined){
     document.getElementById('mudarVisualizacao-botao').innerText = localStorage.visualizacao;
     if (document.getElementById('mudarVisualizacao-botao').innerText==='Mudar para modo de edição') {
         document.getElementById('widget-chao-botao').style.display='none';
