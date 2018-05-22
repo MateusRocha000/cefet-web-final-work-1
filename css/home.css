@@ -105,31 +105,31 @@ h2{
 	text-align: center;
 }
 
-.stair-left{
+#stair-left{
 	width: 20%;
-	height: 90%;
+	height: 97%;
 	position: absolute;
 	left: 16%;
 	bottom: 0;
 }
 
-.stair-middle{
+#stair-middle{
 	width: 50%;
 	height: 75%;
 	position: absolute;
 	left: 25%;
-	bottom: 1%;
+	bottom: 4px;
 }
 
-.stair-right{
+#stair-right{
 	width: 20%;
-	height: 90%;
+	height: 97%;
 	position: absolute;
 	right: 16%;
 	bottom: 0;
 }
 
-.cano1{
+#cano1{
 	transform: rotate(90deg);
 	width: 7.5%;
 	height: auto;
@@ -138,7 +138,7 @@ h2{
 	bottom: 46%;
 }
 
-.cano2{
+#cano2{
 	transform: rotate(90deg);
 	width: 7.5%;
 	height: auto;
@@ -147,7 +147,7 @@ h2{
 	bottom: 16%;
 }
 
-.cano3{
+#cano3{
 	transform: rotate(-90deg);
 	width: 7.5%;
 	height: auto;
@@ -156,7 +156,7 @@ h2{
 	bottom: 46%;
 }
 
-.cano4{
+#cano4{
 	transform: rotate(-90deg);
 	width: 7.5%;
 	height: auto;
@@ -166,22 +166,20 @@ h2{
 }
 
 #wall1{
-	transform: rotate(90deg);
 	position: absolute;
-	left: 14%;
-	bottom: 25.7%;
-	width: 35%;
-	height: auto;
+	left: 28%;
+	bottom: 7%;
+	width: 8.3%;
+	height: 70%;
 	z-index: 1;
 }
 
-.wall2{
-	transform: rotate(90deg);
+#wall2{
 	position: absolute;
-	right: 14%;
-	bottom: 25.7%;
-	width: 35%;
-	height: auto;
+	right: 28%;
+	bottom: 7%;
+	width: 8.3%;
+	height: 70%;
 	z-index: 1;
 }
 
@@ -220,7 +218,7 @@ h2{
 #madoka{
     height: 100px;
     width: auto;
-    bottom: 45px;
+    bottom: 7%;
     position: absolute;
     display: block;
 }
